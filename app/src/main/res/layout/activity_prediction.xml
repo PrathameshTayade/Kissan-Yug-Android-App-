@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictionActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cotton Price Prediction"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+            <View
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#808080"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="State"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="24sp"
+                android:layout_weight=".5"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+</androidx.appcompat.widget.LinearLayoutCompat>
+            <View
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#808080"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Variety"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="24sp"
+                    android:layout_weight=".5"
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#808080"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Month"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="24sp"
+                    android:layout_weight=".5"
+                    android:id="@+id/monthinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#808080"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Year"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="24sp"
+                    android:layout_weight=".5"
+                    android:id="@+id/yearinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#808080"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Price"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="24sp"
+                    android:layout_weight=".5"
+                    android:id="@+id/predictedPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#808080"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
